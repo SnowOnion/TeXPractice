@@ -5,9 +5,7 @@
 *.log
 *.synctex.gz
 *.aux
-*.bbl
-*.blg
-
+*.tex.bak
 
 #################
 ## Eclipse
