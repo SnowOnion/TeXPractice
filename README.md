@@ -1,5 +1,5 @@
-Ò»Ð©TeXÁ·Ï°
+ä¸€äº›TeXç»ƒä¹ 
 ===========
-²»ÖªµÀÊÇ²»ÊÇWinedtµÄÎÊÌâ, ÔÝÊ±Ö»ÄÜ±àÒëANSI±àÂëµÄtexÔ´ÎÄ¼þ. ËùÒÔÔÚgithubÀïÖÐÎÄÏÔÊ¾ÎªÂÒÂë.
+ä¸çŸ¥é“æ˜¯ä¸æ˜¯Winedtçš„é—®é¢˜, æš‚æ—¶åªèƒ½ç¼–è¯‘ANSIç¼–ç çš„texæºæ–‡ä»¶. æ‰€ä»¥åœ¨githubé‡Œä¸­æ–‡æ˜¾ç¤ºä¸ºä¹±ç .
 
-ÎÒÔÙ½â¾ö½â¾ö.
+æˆ‘å†è§£å†³è§£å†³.
