@@ -8,6 +8,7 @@
 *.bbl
 *.blg
 *.tex.bak
+*.tex.sav
 
 #################
 ## Eclipse
