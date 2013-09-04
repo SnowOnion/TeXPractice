@@ -1,0 +1,170 @@
+% -*- coding: utf-8 -*-
+% a4paper - A4纸 11pt -字号 twoside -双面 openany -新章节可在偶数页开始
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}   %设定页边距
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+
+%%%%%%%%%%%%%%% Lee++
+\usepackage{CJK}    %中文环境
+\usepackage{ulem}   %\uline
+\newcommand{\blank}{\uline{\textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}\ \textcolor{white}{a}}}
+
+
+% amsmath package, useful for mathematical formulas
+\usepackage{amsmath}
+% amssymb package, useful for mathematical symbols
+\usepackage{amssymb}
+% graphicx package, useful for including eps and pdf graphics
+% include graphics with the command \includegraphics
+\usepackage{graphicx}
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+\usepackage{color}
+
+\usepackage{color}
+\usepackage{placeins}
+\usepackage{ulem}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+
+\begin{document}
+\begin{CJK}{GBK}{song}
+
+
+\begin{center}
+北京邮电大学 (软件学院) 2011--2012 学年第二学期\\
+{\Large
+\textbf{《概率论与随机过程》期末考试试题(A)}
+}
+\\
+TeXify: Lee E-mail: snowonionlee@gmail.com
+\\
+Pdf和TeX源文件发布在 github.com/SnowOnion/TeXPractice
+\end{center}
+
+\section*{一. 填空题~(每小题~3 分，共~45 分)}
+\begin{enumerate}
+\item 设$A,B$为相互独立的随机事件, $P(A)=0.8, P(B)=0.4$, 则$P(A\bar{B})$=~\blank.
+
+\item 设$A,B$为两个随机事件, 已知$\displaystyle{ P(A)=\frac{1}{2}, P(B)=\frac{1}{3}, P(AB)=\frac{1}{4} }$, 则$P(A\cup B)$=~\blank.
+
+\item 设一批产品中共有10件产品, 其中有2件次品, 现不放回地连续任取6件, 则第5次取出次品的概率为~\blank.
+
+\item 已知随机变量$X$的分布律为
+\begin{tabular}{l|llll}
+$X$ & -1 & 0 & 1 & 2 \\
+\hline
+$p_k$ & 0.2 & 0.1 & 0.4 & 0.3
+\end{tabular},
+设$Y=2\vert X\vert +1$, 则$Y$的分布律为~\blank.
+
+
+
+\item 设随机变量$X$的分布函数为$F(X)$, 概率密度为
+\[
+f(x)=
+\left\{
+\begin{array}{ll}
+2e^{-2x},&\textrm{x $>$ 0,} \\
+0,&\textrm{x $\le$ 0.}
+\end{array}
+\right.
+\]
+则$F(5)$=~\blank.
+
+\item 二维随机变量$(X,Y)$的概率密度为
+\begin{displaymath}
+f(x,y)=
+\left\{
+\begin{array}{ll}
+\displaystyle{ \frac{1}{2} }, & \textrm{$0 \le x \le 1, 0 \le y \le 2,$} \\
+0, & \textrm{$else$.}
+\end{array}
+\right.
+\end{displaymath}
+则$P\{X<Y\}$=~\blank.
+
+\item 设随机变量$X \thicksim U(0,1)$, 则随机变量$Y=2X+1$的概率密度$f(y)$=~\blank.
+
+\item 设随机变量$X \thicksim \pi(2), Y \thicksim B(10,0.5)$, 则$E(2X+4Y-1)$=~\blank.
+
+\item 设离散型随机变量$X$的分布律
+\begin{displaymath}
+P\{X=k\}=\frac{A}{3^k k!}\quad (k=0,1,2,...)
+\end{displaymath}
+, 则常数$A$=~\blank.
+
+\item 设随机变量$X,Y$相互独立, 且$X \thicksim N(1,4), Y\thicksim N(4,2)$, 则$2X+4Y+1 \thicksim$~\blank.
+
+\item 设随机变量$X,Y$满足: $D(X)=1, D(Y)=4, D(3X-2Y+1)=13$, 则$\rho_{XY}$=~\blank.
+
+\item 设随机变量$X_1,X_2,...,X_n$独立同分布, 分布函数为$F(x)$, 求随机变量$Z=max\{X_1,X_2,...,X_n\}$的分布函数$F_Z(z)$=~\blank.
+
+\item 设随机过程$X(t)=Yt, Y \thicksim N(5,9)$, 则均值函数为~\blank.
+
+\item 设$\{N(t),t\ge 0\}$服从强度为$\lambda$的泊松过程, 则$P\{N(5)=4,N(7)=6\}$=~\blank, $P\{N(7)=6 | N(5)=4\}$=~\blank.
+
+\end{enumerate}
+
+\newpage
+
+\section*{二. (10分)}
+
+设随机变量$X$具有概率密度
+\[
+f(x)=
+    \left\{
+        \begin{array}{ll}
+            a\cos x,   &\textrm{$\displaystyle{ |x|<\frac{\pi}{2}, }$} \\
+            0,      &\textrm{$else$.}
+        \end{array}
+    \right.
+\]
+求: (1) 常数$a$, (2) $\displaystyle{ P\{0<X<\frac{\pi}{4}\} }$, (3) $X$的分布函数.
+
+\section*{三. (10分)}
+
+设二维随机变量$(X,Y)$具有概率密度
+\[
+f(x,y)=
+    \left\{
+        \begin{array}{ll}
+            kxy,    &\textrm{$0<x<y<1,$} \\
+            0,      &\textrm{$else$.}
+        \end{array}
+    \right.
+\]
+求: (1) 常数$k$, (2) $P\{X+Y<1\}$, (3) 边缘概率密度$f_X(x), f_Y(y)$.
+
+\section*{四. (10分)}
+
+设随机变量$X,Y$相互独立, 均服从区间$(0,1)$上的均匀分布,求: $Z=X+Y$的概率密度.
+
+\section*{五. (15分)}
+
+已知齐次马氏链$\{X_n,n\ge 0\}$, 状态空间为$I=\{0,1,2\}$, 转移矩阵为
+%%只为一场梦 摔碎了山河 重定义array行距 http://bbs.ctex.org/forum.php?mod=viewthread&tid=58032
+\renewcommand\arraystretch{1.8}
+\[
+\mathbf{P}=
+\begin{pmatrix}
+            \displaystyle{ \frac{1}{2} } & \displaystyle{ \frac{1}{2} } & 0\\
+            \displaystyle{ \frac{1}{2} } & 0 & \displaystyle{ \frac{1}{2} }\\
+            0 & \displaystyle{ \frac{1}{2} } & \displaystyle{ \frac{1}{2} }
+\end{pmatrix}
+\]
+
+,初始分布为$\displaystyle{ P_0(0)=\frac{1}{3}, P_1(0)=\frac{1}{3}, P_2(0)=\frac{1}{3} }$. \\
+\\
+(1) 求二步转移矩阵$P(2)$, (2) 求$P\{X_2=1,X_4=0,X_5=1\}$, (3) 证明遍历性,并求平稳分布.
+
+\section*{六. (10分)}
+
+设$X(t),Y(t),t\ge 0$是相互独立的平稳过程, 验证$Z(t)=X(t)+Y(t)$是否是平稳过程.
+
+\end{CJK}
+\end{document}
