@@ -2,62 +2,30 @@
 
 
 % ref:
+% Latex文字大小设置【转】
 % http://www.baiyuxiong.com/?p=141
+
+% 5. 空間與位置
 % http://edt1023.sayya.org/tex/latex123/node6.html
-% http://bbs.chinatex.org/forum.php?mod=viewthread&tid=4777
+
+% [已解决] \LaTeX'这个命令内部是如何实现的？
+% http://bbs.chinatex.org/forum.php?mod=viewthread&tid=4777 
+
+% 未使用
+% LaTex中的左右移动微调 
+% http://blog.csdn.net/cg_csu/article/details/6553896
 
 \documentclass[30pt]{article} 
 \usepackage{xcolor} 
 \usepackage{utopia} 
 
-\usepackage{CJK}    %中文环境
+\usepackage{CJK}    % Chinese-Japanese-Korean 环境
 
-\def\kaka{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\@}
+\def\tex{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\@}
 
-% \def\wakaka{L\kern-.36em%
-%                             {\sbox\z@ T%
-%                              \vbox to\ht\z@{\hbox{\check@mathfonts
-%                                                      \fontsize\sf@size\z@
-%                                                      \math@fontsfalse\selectfont
-%                                                     A}%
-%                                                 \vss}%
-%                              }%
-%                             \kern-.15em%
-%                             \kaka}
 
 \begin{document}
 \begin{CJK}{UTF8}{song}
-
-
-\begin{center}
-
-{\Large
-\textbf{aaa}\\
-}
-bbb\\
-
-
-とある哲学の\\
-超電磁砲\\
-レールガン\\
-
-\end{center}
-
-とある科学の\\
-超電磁砲\\
-レールガン\\
-{
-\tiny{Atiny}
-\scriptsize{Ascriptsize}
-\footnotesize{Afootnotesize}
-\small{Asmall}
-\normalsize{Anormalsize}
-\large{Alarge}
-\Large{ALarge}
-\LARGE{ALARGE}
-\huge{Ahuge}
-\Huge{AHuge}
-}
 
 \begin{center}
 {
@@ -77,6 +45,29 @@ bbb\\
 }
 \end{center}
 
+
+\begin{center}
+
+
+とある哲学の\\
+超電磁砲\\
+レールガン\\
+
+\end{center}
+
+{
+\tiny{Atiny}
+\scriptsize{Ascriptsize}
+\footnotesize{Afootnotesize}
+\small{Asmall}
+\normalsize{Anormalsize}
+\large{Alarge}
+\Large{ALarge}
+\LARGE{ALARGE}
+\huge{Ahuge}
+\Huge{AHuge}
+}
+
 {\Huge
 \textcolor[HTML]{2F50AD}{G}% 
 \textcolor[HTML]{B32F17}{o}% 
@@ -88,7 +79,9 @@ bbb\\
 \textcolor[HTML]{B32F17}{e}} 
 \\
 \\
-\kaka
+\tex
+\\
+\TeX
 \\
 T\kern-.1667em
 \lower.5ex\hbox{E}
